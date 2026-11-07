@@ -56,6 +56,7 @@ const fetchNAVIStats = async ({ startTimestamp, createBalances }: FetchOptions) 
 
 const adapter: Adapter = {
     version: 2,
+    pullHourly: false, // API returns whole days
     adapter: {
         [CHAIN.SUI]: {
             fetch: fetchNAVIStats,

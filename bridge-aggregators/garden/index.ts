@@ -264,6 +264,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // pages the whole orders feed from newest on every call
     fetch,
     adapter: chainMapper,
     prefetch: prefetch as any

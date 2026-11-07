@@ -44,6 +44,7 @@ const adapters: SimpleAdapter = {
   },
   allowNegativeValue: true, // House reimbursed fees
   version: 2,
+  pullHourly: false, // passes the window, source unreachable 2026-11, unverified
   methodology: {
     Fees: "Trading fees paid by users.",
     Revenue: "All trading fees from users.",

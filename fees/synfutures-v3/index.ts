@@ -70,6 +70,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: Adapter = {
   version: 2,
+  pullHourly: false, // subgraph returns whole days
   methodology,
   adapter: {
     // [CHAIN.BLAST]: {

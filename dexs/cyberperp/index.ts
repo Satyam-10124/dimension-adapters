@@ -4,6 +4,7 @@ import { fetchVolume, fetchVolumeMove } from "./cyberperp";
 
 const adapter: SimpleAdapter = {
   version: 2,
+  pullHourly: false, // daily stats keyed by day
   adapter: {
     // [CHAIN.IOTAEVM]: {
     //   fetch: fetchVolume,

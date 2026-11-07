@@ -47,6 +47,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: SimpleAdapter = {
   version: 2,
+  pullHourly: false, // daily klines keyed by day
   fetch,
   // Orders are matched and positions are held off-chain; Solana only settles
   // deposits and withdrawals (confirmed by the Pacifica team), so the venue is

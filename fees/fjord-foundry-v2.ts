@@ -37,6 +37,7 @@ const methodology = {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // daily stats keyed by day
     methodology,
     adapter: Object.keys(v2ChainIDs).reduce((acc, chain) => {
         return {

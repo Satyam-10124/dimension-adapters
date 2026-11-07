@@ -19,6 +19,7 @@ const fetch = async (options: FetchOptions): Promise<FetchResultVolume> => {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // daily stats keyed by day
     fetch,
     chains: [CHAIN.CARDANO],
     start: '2024-06-13',

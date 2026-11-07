@@ -11,6 +11,7 @@ const fetch: FetchV2 = async ({ startTimestamp, endTimestamp }) => {
 
 const adapter: SimpleAdapter = {
 	version: 2,
+	pullHourly: false, // API returns whole days
 	adapter: {
 		[CHAIN.SUI]: {
 			fetch,

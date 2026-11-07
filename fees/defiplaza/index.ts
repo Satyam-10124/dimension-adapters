@@ -20,6 +20,7 @@ const radix_endpoint = "https://radix.defiplaza.net/api/defillama/volume";
 
 const adapter: SimpleAdapter = {
 	version: 2,
+	pullHourly: false, // subgraph returns whole days
 	adapter: {
 		[CHAIN.ETHEREUM]: {
 			fetch: async ({ startTimestamp, endTimestamp, createBalances }: FetchOptions) => {

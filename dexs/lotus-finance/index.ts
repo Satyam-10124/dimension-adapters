@@ -63,6 +63,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: SimpleAdapter = {
   version: 2,
+  pullHourly: false, // daily rows API, cumulative delta per day
   fetch,
   chains: [CHAIN.SUI],
   start: "2025-06-28",

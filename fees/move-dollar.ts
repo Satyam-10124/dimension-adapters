@@ -68,6 +68,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: SimpleAdapter = {
   version: 2,
+  pullHourly: false, // window honoured, but the public Aptos fullnode rate-limits 24x the block lookups
   fetch,
   chains: [CHAIN.APTOS],
   start: "2023-04-05",

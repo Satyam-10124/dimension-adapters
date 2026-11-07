@@ -15,6 +15,7 @@ const fetch = async (options: FetchOptions) => {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // API returns whole days
     fetch,
     chains: [CHAIN.CARDANO],
     start: '2023-05-30',

@@ -77,6 +77,7 @@ const adapter: Adapter = {
     },
   },
   version: 2,
+  pullHourly: false, // API returns whole days
   methodology: {
     Volume:
       "All deposits and withdrawals into currently ongoing auctions",

@@ -55,6 +55,7 @@ const fetch = async (options: FetchOptions): Promise<FetchResultVolume> => {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // passes the window, source unreachable 2026-11, unverified
     adapter: {
         [CHAIN.WAVES]: {
             fetch,

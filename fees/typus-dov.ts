@@ -182,6 +182,7 @@ const fetch = async (options: FetchOptions): Promise<FetchResultV2> => {
 
 const adapter: SimpleAdapter = {
   version: 2,
+  pullHourly: false, // Sentio query takes a fixed 1-day delta_over_time
   adapter: {
     [CHAIN.SUI]: {
       fetch,

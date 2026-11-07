@@ -70,6 +70,7 @@ const fetch = async (options: FetchOptions): Promise<FetchResult> => {
 
 const adapter: Adapter = {
   version: 2,
+  pullHourly: false, // passes the window, source unreachable 2026-11, unverified
   adapter: {
     [CHAIN.CARDANO]: {
       fetch,

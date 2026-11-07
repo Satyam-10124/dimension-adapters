@@ -223,6 +223,7 @@ const methodology = {
 
 const adapter: SimpleAdapter = {
     version: 2,
+    pullHourly: false, // pages the whole orders feed from newest on every call
     fetch,
     methodology,
     adapter: chainMapper,

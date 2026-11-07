@@ -58,6 +58,7 @@ const fetchFeesAndRevenues = async (options: FetchOptions) => {
 
 const adapter: any = {
   version: 2,
+  pullHourly: false, // API returns whole days
   methodology: {
     Fees: "Sums the fees of listing request & trending request.",
     Revenue: "Sums the fees of listing request & trending request.",
